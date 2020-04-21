@@ -1,0 +1,516 @@
+/*
+author: Samir Vllaco
+Created from scratch
+*/
+
+/*desktop*/
+:root {
+    --navcolor:#0085c3; 
+    --navhover:#004261;
+    --dumepi: #07020D;
+    --whitee: #F1E9DB;
+    --grayy: #F1E9DB;
+    --aa: #495EB6;
+}
+
+.lang {
+    position:absolute;
+    right:85px;
+    top:70px;
+    font-size:13px;
+    cursor:pointer;
+    font-size:15px;
+
+
+}
+
+
+.active {
+    color:#696969;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.other {
+    color:#d3d3d3;
+    transition:130ms;
+}
+
+.other:hover {
+    color:#696969;
+    text-decoration:underline;
+}
+
+
+nav {
+    position: absolute;
+    top:0% !important;
+    margin-top:0;
+    padding: 2em !important;
+    box-shadow: 1px 1px 10px -5px rgba(0,0,0,.5);
+
+}
+.navbar-center { /*centrimi i elementeve*/
+    position: absolute !important;
+    right: 3%;
+    transform: translatex(0%);
+    
+}
+
+.navbar-brand { /*titulli i navbarit*/
+    position:absolute;
+    left:3%;
+    margin: 0 !important;
+    padding:0 !important;
+    color:#000 !important;
+    font-weight: 600;
+    font-size:30px !important;
+}
+
+ul li a { /* hapesira mes shkronjave*/
+    padding:0 1.5em !important;
+    color:#495EB6 !important;
+    font-size:18px;
+    transition: 100ms;
+    
+}
+
+ul li a:hover {
+
+color: #c056b0 !important;
+ text-decoration: underline !important;
+
+}
+
+.virus-icon {
+    position:absolute;
+    top:75px;
+    left:160px;
+    
+    
+}
+.covid { 
+    position:absolute;
+    left:0;
+    font-weight:bolder;
+    padding:.25em 1em;
+    top:80px;
+    font-size:15px;
+    border-radius:50px;
+    left:3%;
+    color: #000;
+    border:1px solid #000;
+}
+
+.covid:hover {
+    color:#fff !important;
+    background: #495EB6;
+    box-shadow: 1px 1px 15px #495EB6;
+    border:1px solid #495EB6;
+}
+
+.navbar-toggler { /* hamburger-menu */
+   position:absolute !important;
+   right:15px !important; 
+   border:none !important;
+
+}
+
+.navbar-toggler-icon {
+  
+    
+}
+
+
+/* main 1 */
+
+
+
+
+.first { /*first main spacings*/
+    margin: 9em 3% 0 3%;
+
+    
+
+}
+
+.both {
+    margin-right:3%;
+    display:flex;
+    justify-content:baseline;
+    width:100%;
+    align-content:center;
+    align-self:center;
+    align-items:center;
+
+}
+.firstbox h1 { /*left part text*/
+    line-height: 1.2em;
+    font-size: 50px;
+    font-weight: bolder;
+    color:#38498d !important;
+
+
+    
+}
+
+
+.firstbox p {
+    display:none;
+    text-align:justify;
+    color: #38498d;
+    font-weight:600;
+    line-height:2em;
+    
+}
+
+
+.firstbox {
+    display:inline-block;
+    width:35%;
+    height:256px;
+    padding-right:50px;
+    margin-top:3em;
+    margin-left:4em;
+}
+
+.nshpi {
+    color:#c056b0;
+    font-weight:bolder;
+    font-size:1.5em;
+}
+
+
+
+.col-sm {
+    color:#F1E9DB;
+    background: #495EB6;
+    margin:1em;
+    border-radius: 5px;
+    text-align:center;
+    height:200px;
+    
+}
+
+.stat-tittle1 {
+    font-weight:bolder;
+    font-size:20px;
+}
+
+.stat1 {
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    color:#d3d3d3;
+    font-size:60px;
+    margin:0;
+    padding:0;
+}
+
+
+.boxxes {
+   display:flex;
+   align-content: center;
+   align-items:center;
+   align-self:center;
+   justify-content: center;
+   margin-top:5em !important;
+   padding:0 !important;
+}
+
+.boxx {
+    width:30% !important;
+    height:180px !important;
+    background:#495EB6;
+    border-radius: 11px;
+    margin:1em;
+    padding:0;
+    transition:100ms;
+    
+    
+}
+
+.boxx:hover {
+    box-shadow: 0 1px 20px -5px #38498d;
+}
+
+.boxx p {
+    text-align:center;
+    color: #F1E9DB;
+    font-size:60px;
+}
+
+.boxx h3 {
+    text-align:center;
+    color: #F1E9DB;
+    padding-top:1em;
+    font-size:22px;
+}
+
+.secondbox {
+    display:inline-block !important;
+    width:70%;
+    
+
+}
+
+
+.secondbox h1 { /*left part text*/
+    line-height: 1.2em;
+    font-size: 3em;
+    font-weight: bolder;
+    color:#38498d !important;
+
+
+    
+}
+
+
+.secondbox p {
+    text-align:justify;
+    color: #38498d;
+    font-weight:600;
+    line-height:2em;
+    
+}
+
+section {
+    margin-top:1em;
+}
+
+
+
+
+
+
+
+
+
+
+/*tablet-laptopa tvogla*/
+@media only screen and (max-width: 1750px) {
+   
+    .navbar-center {
+       
+    }
+
+    nav {
+        margin:.5em 0 !important;
+        margin:0 !important;
+    }
+
+    .lang {
+        position:absolute;
+        left:3%;
+        top:80px;
+    
+    }
+
+    .virus-icon {
+        position:absolute;
+        top:75px;
+        right:150px;
+        left:auto;
+        
+        
+    }
+ 
+
+
+    .boxx:hover {
+        box-shadow:none;
+    }
+
+
+
+  
+    .boxx {
+        
+        width:30%;
+      
+    }
+
+    .firstbox {
+        margin-left:0;
+        width:40%;
+        padding-right:15px;
+        height:232px;
+
+    }
+
+    .boxxes {
+        margin-top:5em !important;
+        width:100%;
+       
+    }
+    
+    .firstbox h1 {
+        font-size:250%;
+
+    }
+
+    .boxx p {
+        font-size:250%;
+    
+    } 
+
+    .boxx h3 {
+        font-size:110%;
+        height:65.18px;
+    
+    }
+    
+   
+    .covid {
+        left:auto;
+        right:3% !important;
+    }
+    
+    .secondbox {
+        width:50%;
+        
+    }
+
+    .both {
+        margin:3%;
+    }
+}
+
+/*reuzllucione te ndryshme*/
+
+/*============ndarje=============*/
+
+/*telefon-tablet*/
+@media (max-width:992px) {
+    .navbar-brand {
+        position:relative;
+        left:3%;
+        
+    }
+
+    .navbar-toggler { /* hamburger-menu */
+        position:absolute !important;
+        right:3% !important; 
+        border:none !important;
+     
+     }
+    nav {
+
+        margin:.5em 0 !important;
+        padding:0 !important;
+        left:0 !important;
+        box-shadow:none !important;
+
+    }
+    
+    .lang {
+        display:none;
+    }
+
+    .first { /*first main spacings*/
+        
+    margin:0 !important;
+    padding:0 !important;
+    }
+
+    .firstbox {
+        text-align:center;
+        margin-top:4em;
+        padding:0;
+        width:100%;
+        display:inline-block !important;
+        padding-bottom:25px;
+        border-right:none;
+        height:100px !important;
+        margin-bottom:5em !important;
+        
+    }
+
+    .breaker {
+        display:block;
+        margin:0 auto;
+        width:80%;
+        background:#38498d;
+        height:2px;
+    }
+
+ 
+
+    .firstbox p {
+        display:none !important;
+        margin:0 !important;
+        padding:0;
+        display:block;
+        width:70%;
+        margin:0 auto !important;
+        text-align:center;
+        font-size:15px;
+        line-height:1.5em;
+        
+}
+
+.firstbox h1 {
+    padding: 0.11;
+    font-size:40px;
+    
+}
+.boxxes {
+
+    margin-top:2em;
+    width:100%;
+    flex-direction: column;
+}
+
+.boxx {
+    flex-direction: column;
+    width:80% !important;
+    height:200px !important;
+    margin:.7em;
+}
+
+
+
+.boxx:hover {
+    box-shadow:none;
+}
+
+.both {
+    display:block;
+}
+
+
+.secondbox {
+    text-align:center;
+    margin-top:4em;
+    padding:0;
+    width:100%;
+    display:inline-block !important;
+    padding-bottom:25px;
+    border-right:none;
+    margin-top:2.5em !important;
+}
+
+.secondbox p {
+margin:0 !important;
+padding:0;
+display:block;
+width:70%;
+margin:0 auto !important;
+text-align:center;
+font-size:15px;
+line-height:1.5em;
+}
+
+.secondbox h1 {
+padding: 0.11;
+font-size:40px;
+
+}
+
+}
+
+ 
+    
+
+
