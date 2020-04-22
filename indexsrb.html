@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +8,7 @@
     <meta charset="UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COVID19 STATISTIKA - KOSOVO</title>
+    <title>STATISTIKAT COVID19 - KOSOVE</title>
     <!-- my css-->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
    <!--fontawesome-->
@@ -14,10 +16,19 @@
     <!-- strap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!--js-->
-    <script src="myscript.js"></script>
 
+    <!--charts script-->
     
+      <!-- Step 1 - Include the fusioncharts core library -->
+      <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+      <!-- Step 2 - Include the fusion theme -->
+      <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+
+        <!--js-->
+        <script src="myscript.js"></script>
+
+
 
 </head>
 
@@ -36,9 +47,9 @@
       </a>
 
       <div class="lang">
-<span><a  class="active"  href="indexsrb.html">SRB</a></span>
-<span><a  class="other"   href="index.html">SHQ</a></span>
-<span><a   class="other"   href="indexang.html">ANG</a></span>
+<span><a  class="active"  href="index.html">SHQ </a></span>
+<span><a  class="other"   href="indexang.html">ANG</a></span>
+<span><a   class="other"   href="indexsrb.html">SRB</a></span>
 </div>
 
 
@@ -54,22 +65,23 @@
        
         <ul class="nav navbar-nav navbar-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">Statistika</a>
+            <a class="nav-link" href="#statistika">Statistika</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Simptomi</a>
+            <a class="nav-link" href="#">Simptomat</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sugestije</a>
+            <a class="nav-link" href="#">Keshilla</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Svetska statistika</a>
+            <a class="nav-link" href="#">Statistika Boterore</a>
           </li>
         
         
        
         </ul>
         <a class="covid">COVID19</a>
+        <img class="virus-icon"src="https://img.icons8.com/ultraviolet/40/000000/coronavirus.png"/>
       </div>
     </nav>
 
@@ -100,35 +112,79 @@
 
 <section class="first" id="nje">
 
-
+<div class="both">
   <div class="firstbox"> 
-    <span class="nshpi">#ostanikodkuće</span>
-  <h1>Virus se ne pomera  </br>ljudi ga premeštaju.</h1>
-  <p>COVID19 je zarazna bolest koja se duboko i neprekidno širi od osobe do osobe u mnogim zemljama</p>
+    <span class="nshpi">#rriNSHPI</span> 
+  <h1>Virusi nuk lëviz</br>ne e lëvizim atë.</h1>
+  <p>COVID19 është një sëmundje infektive e cila përhapet thellësisht dhe vazhdimisht nga personi në person në shumë vende.</p>
   </div>
+
+  <div class="breaker">
+
+  </div>
+
+  <div class="secondbox">
+  <h1>Cka eshte virusi COVID19?</h1>
+  <p>Sëmundja koronavirus (COVID-19) është një sëmundje infektive e shkaktuar nga një virus i ri. Sëmundja shkakton sëmundje të frymëmarrjes (siç është gripi) me simptoma të tilla si kollë, ethe dhe në raste më të rënda, vështirësi në frymëmarrje.</p>
+  <button class="butoni-simptomat">Shiko Simptomat</button>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+<section id="statistika">
+<hr>
+<div class="statistikatitle">
+<h1>Statistika te fundit ne Kosove</h1>
+<p>Se fundmi i perditesuar me <strong>4/21/2020 11:36AM</strong></p>
+
+
+
+
 
  <div class="boxxes">
 
+
    <div class="boxx">
-    <h3>Potvrđeni slučajevi
+    <h3>Raste të konfirmuara
     </h3>
     <p>598</p>
    </div>
 
    <div class="boxx">
-     <h3>Oporavio</h3>
+     <h3>Raste të shëruara</h3>
      <p>123</p>
    </div>
 
    <div class="boxx">
-     <h3>Smrt</h3>
+     <h3>Vdekje</h3>
      <p>15</p>
    </div>
  </div>
  
- 
+
+</section>
 
 
+
+
+<section class="second" id="dy">
+
+  <h3 class="fundtitle">Raporti Gjinor</h3>
+  <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</section>
+
+<hr>
+
+<section class="third" id="tre">
+
+  <h3 class="parafundtitle">Numri i te infektuarve ne baze te Qyteteve</h3>
+<center>
+  <div id="chart-container"></div>
+</center>
 </section>
 
 </main>

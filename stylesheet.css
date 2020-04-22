@@ -1,6 +1,10 @@
 /*
-author: Samir Vllaco
-Created from scratch
+=== OPEN DATA KOSOVA CHALLANGE ===
+
+ o Author: Samir Vllaco o 
+ o Theme: Samir Vllaco / Scratch o 
+
+=== thank you for your attention! ===
 */
 
 /*desktop*/
@@ -142,13 +146,16 @@ color: #c056b0 !important;
     align-content:center;
     align-self:center;
     align-items:center;
-
+    margin-top:0 !important;
+    margin-bottom:5em !important;
 }
+
 .firstbox h1 { /*left part text*/
     line-height: 1.2em;
     font-size: 50px;
     font-weight: bolder;
     color:#38498d !important;
+    
 
 
     
@@ -170,7 +177,7 @@ color: #c056b0 !important;
     width:35%;
     height:256px;
     padding-right:50px;
-    margin-top:3em;
+    margin-top:.5em;
     margin-left:4em;
 }
 
@@ -215,7 +222,7 @@ color: #c056b0 !important;
    align-items:center;
    align-self:center;
    justify-content: center;
-   margin-top:5em !important;
+   margin-top:3em !important;
    padding:0 !important;
 }
 
@@ -279,12 +286,135 @@ section {
     margin-top:1em;
 }
 
+.butoni-simptomat {
+   background:transparent;
+    padding:1em 1em;
+    font-size:15px;
+    border-radius:50px;
+    color: #c056b0;
+    border:1px solid #c056b0;
+    font-weight:bolder;
+
+}
+.butoni-simptomat:hover {
+    background:#c056b0;
+    box-shadow: 1px 1px 15px #c056b0;;
+    color: #fff;
+
+ 
+ 
+ }
+
+ .statistikatitle {
+     text-align:center;
+     margin-top:4em;
+ }
+
+ .statistikatitle h1 {
+     color: #273363
+ }
+
+/*section 2 */
+
+
+.second {
+    margin-top:7em;
+}
+
+
+.canvasjs-chart-toolbar { /*remove watermark */
+    display:none;
+}
+
+.canvasjs-chart-credit {
+    display:none;
+}
 
 
 
+/*section3*/
 
 
+.fundtitle {
+    text-align:center;
+    color:#273363;
+}
 
+.parafundtitle {
+    text-align:center;
+    color :#273363;
+    margin-top:2em;
+}
+
+
+#chart-container {
+    margin-top:2em;
+    margin-bottom:2em;
+    display:flex;
+    justify-content: center;
+}
+
+.aurecords {  /*symptoms section*/
+    margin-top:5em;
+    text-align:center;
+    color:#273363;
+    width:80%;
+    margin:0 auto;
+}
+
+.aurecords h6{
+    font-size:2.5rem;
+    margin:1em;
+}
+
+.aurecords p {
+    line-height:1.5em;
+    font-size:20px;
+
+}
+
+.boxxxes {
+    display:flex;
+    align-content: center;
+    align-items:center;
+    align-self:center;
+    justify-content: center;
+    margin-top:3em !important;
+    padding:0 !important;
+ }
+ 
+ .boxxx {
+     width:70% !important;
+     height:180px !important;
+     background:#c056b0;
+     border-radius: 11px;
+     margin:1em;
+     padding:0;
+     transition:100ms;
+     
+     
+ }
+ 
+ .boxxx:hover {
+     box-shadow: 0 1px 20px -5px #c056b0;
+ }
+ 
+
+ 
+ .boxxx h3 {
+     text-align:center;
+     color: #F1E9DB;
+     padding-top:1em;
+     font-size:22px;
+ }
+ 
+.simp-images {
+    width:75px;
+}
+
+.veshtersi { /*fixing h1 alignment*/
+    height:48px !important;
+}
 
 
 
@@ -340,7 +470,7 @@ section {
     }
 
     .boxxes {
-        margin-top:5em !important;
+        margin-top:3em !important;
         width:100%;
        
     }
@@ -507,6 +637,33 @@ padding: 0.11;
 font-size:40px;
 
 }
+
+.butoni-simptomat {
+    margin-top:3em;
+    background:transparent;
+     padding:1em 1em;
+     font-size:15px;
+     border-radius:50px;
+     color: #c056b0;
+     border:1px solid #c056b0;
+     font-weight:bolder;
+ 
+ }
+
+
+ .boxxxes {
+    width:100% !important;
+     flex-direction: column !important;
+     justify-content: center !important;
+     align-items: center !important;
+     margin:0 !important;
+ };
+
+ .boxxx {
+     width: 100% !important;
+     margin:0 !important;
+    
+ }
 
 }
 

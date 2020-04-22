@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,10 +16,19 @@
     <!-- strap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!--js-->
-    <script src="myscript.js"></script>
 
+    <!--charts script-->
     
+      <!-- Step 1 - Include the fusioncharts core library -->
+      <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+      <!-- Step 2 - Include the fusion theme -->
+      <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+
+        <!--js-->
+        <script src="myscript.js"></script>
+
+
 
 </head>
 
@@ -54,7 +65,7 @@
        
         <ul class="nav navbar-nav navbar-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">Statistika</a>
+            <a class="nav-link" href="#statistika">Statistika</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Simptomat</a>
@@ -108,19 +119,31 @@
   <p>COVID19 është një sëmundje infektive e cila përhapet thellësisht dhe vazhdimisht nga personi në person në shumë vende.</p>
   </div>
 
-  <div class="breaker">
-
-  </div>
+  <div class="breaker"></div>
 
   <div class="secondbox">
   <h1>Cka eshte virusi COVID19?</h1>
   <p>Sëmundja koronavirus (COVID-19) është një sëmundje infektive e shkaktuar nga një virus i ri. Sëmundja shkakton sëmundje të frymëmarrjes (siç është gripi) me simptoma të tilla si kollë, ethe dhe në raste më të rënda, vështirësi në frymëmarrje.</p>
-  <button>Shiko Simptomat</button>
+  <a href="#kkk"> <button class="butoni-simptomat">Shiko Simptomat</button></a>
   </div>
 </div>
- 
+</div>
+</section>
+
+
+
+<section id="statistika">
+<hr>
+<div class="statistikatitle">
+<h1>Statistika te fundit ne Kosove</h1>
+<p>Se fundmi i perditesuar me <strong>4/21/2020 11:36AM</strong></p>
+
+
+
+
 
  <div class="boxxes">
+
 
    <div class="boxx">
     <h3>Raste të konfirmuara
@@ -142,12 +165,59 @@
 
 </section>
 
-<hr>
+
 
 
 <section class="second" id="dy">
 
+  <h3 class="fundtitle">Raporti Gjinor</h3>
+  <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </section>
+
+<hr>
+
+<section class="third" id="tre">
+
+  <h3 class="parafundtitle">Numri i te infektuarve ne baze te Qyteteve</h3>
+  <div id="chart-container"></div>
+
+
+</section>
+
+<hr>
+
+<section class="aurecords" id="kkk">
+  <h6>Simptomat</h1>
+<p>Simptomat më të zakonshme të Koronavirusit janë ethet, lodhja dhe kolla e thatë. Disa pacientë mund të kenë edhe dhimbje fyti, zënie të hundës, rrjedhje hundësh ose barkqitje.
+  Këto simptoma janë zakonisht të lehta dhe fillojnë gradualisht.</p>
+
+  <div class="boxxxes">
+
+
+    <div class="boxxx">
+     <h3>Kollitja e Thate
+     </h3>
+     <img class="simp-images" src="svg/cough.svg">
+    </div>
+ 
+    <div class="boxxx">
+      <h3>Temperatura</h3>
+      <img class="simp-images" src="svg/headache.svg">
+    </div>
+ 
+    <div class="boxxx">
+      <h3 class="veshtersi">Veshtersi Frymemarjes</h3>
+      <img class="simp-images" src="svg/coronavirus.svg">
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
 
 </main>
 
