@@ -3,6 +3,7 @@
 
  o Author: Samir Vllaco o 
  o Theme: Samir Vllaco / Scratch o 
+ o Tablet Friendly, and Mobile Friendly (kinda ;D )
 
 === thank you for your attention! ===
 */
@@ -600,6 +601,11 @@ section {
 
 /*telefon-tablet*/
 @media (max-width:992px) {
+
+
+    body {
+        overflow-X: hidden;
+    }
     .navbar-brand {
         position:relative;
         left:3%;
@@ -752,7 +758,33 @@ font-size:40px;
     
  }
 
+
+ .keshilla{
+     margin-top:15em !important;
+ }
+
+ .up {
+       display:none;
+ }
+
+ hr {
+     display:inline-block !important;
+ }
+
+ .statistikatitle {
+     margin-top:0em !important;
+ }
+
+ #statistika {
+     margin-top:0em !important;
+ }
+
+ .both {
+     margin-bottom:0em !important;
+ }
 }
+
+
 
  
     
