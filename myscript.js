@@ -155,3 +155,176 @@ window.onload = function  () {
       });
     }
 }
+
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Create chart instance
+var chart = am4core.create("chartdiv", am4charts.XYChart);
+
+// Add data
+chart.data = [{
+  "date": "2020-03-22",
+  "value": 0
+}, {
+  "date": "2020-03-23",
+  "value": 0
+}, {
+  "date": "2020-03-24",
+  "value": 0
+}, {
+  "date": "2020-03-25",
+  "value": 0
+}, {
+  "date": "2020-03-26",
+  "value": 0
+}, {
+  "date": "2020-03-27",
+  "value": 0
+}, {
+  "date": "2020-03-28",
+  "value": 0
+}, {
+  "date": "2020-03-29",
+  "value": 0
+}, {
+  "date": "2020-03-30",
+  "value": 0
+}, {
+  "date": "2020-03-31",
+  "value": 0
+}, {
+  "date": "2020-04-01",
+  "value": 0
+}, {
+  "date": "2020-04-02",
+  "value": 0
+}, {
+  "date": "2020-04-03",
+  "value": 0
+}, {
+  "date": "2020-04-04",
+  "value": 0
+}, {
+  "date": "2020-04-05",
+  "value": 1
+}, {
+  "date": "2020'-04-06",
+  "value": 4
+}, {
+  "date": "2020'-04-07",
+  "value": 5
+}, {
+  "date": "2020'-04-08",
+  "value": 6
+}, {
+  "date": "2020'-04-09",
+  "value": 6
+}, {
+  "date": "2020'-04-10",
+  "value": 7
+}, {
+  "date": "2020'-04-11",
+  "value": 7
+}, {
+  "date": "2020'-04-12",
+  "value": 7
+}, {
+  "date": "2020'-04-13",
+  "value": 8
+}, {
+  "date": "2020'-04-14",
+  "value": 8
+}, {
+}, {
+  "date": "2020'-04-15",
+  "value": 9
+}, {
+}, {
+  "date": "2020'-04-16",
+  "value": 11
+}, {
+}, {
+  "date": "2020'-04-17",
+  "value": 12
+}, {
+}, {
+  "date": "2020'-04-18",
+  "value": 12
+}, {
+}, {
+  "date": "2020'-04-19",
+  "value": 12
+}, {
+}, {
+  "date": "2020'-04-20",
+  "value": 14
+}, {
+}, {
+  "date": "2020'-04-21",
+  "value": 16
+}, {
+}, {
+  "date": "2020'-04-22",
+  "value": 18
+}, {
+  
+}];
+
+// Set input format for the dates
+chart.dateFormatter.inputDateFormat = "yyyy-MM-dd";
+
+// Create axes
+var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+
+// Create series
+var series = chart.series.push(new am4charts.LineSeries());
+series.dataFields.valueY = "value";
+series.dataFields.dateX = "date";
+series.tooltipText = "{value}"
+series.strokeWidth = 2;
+series.minBulletDistance = 15;
+
+// Drop-shaped tooltips
+series.tooltip.background.cornerRadius = 20;
+series.tooltip.background.strokeOpacity = 0;
+series.tooltip.pointerOrientation = "vertical";
+series.tooltip.label.minWidth = 40;
+series.tooltip.label.minHeight = 40;
+series.tooltip.label.textAlign = "middle";
+series.tooltip.label.textValign = "middle";
+
+// Make bullets grow on hover
+var bullet = series.bullets.push(new am4charts.CircleBullet());
+bullet.circle.strokeWidth = 2;
+bullet.circle.radius = 4;
+bullet.circle.fill = am4core.color("#fff");
+
+var bullethover = bullet.states.create("hover");
+bullethover.properties.scale = 1.3;
+
+// Make a panning cursor
+chart.cursor = new am4charts.XYCursor();
+chart.cursor.behavior = "panXY";
+chart.cursor.xAxis = dateAxis;
+chart.cursor.snapToSeries = series;
+
+// Create vertical scrollbar and place it before the value axis
+chart.scrollbarY = new am4core.Scrollbar();
+chart.scrollbarY.parent = chart.leftAxesContainer;
+chart.scrollbarY.toBack();
+
+// Create a horizontal scrollbar with previe and place it underneath the date axis
+chart.scrollbarX = new am4charts.XYChartScrollbar();
+chart.scrollbarX.series.push(series);
+chart.scrollbarX.parent = chart.bottomAxesContainer;
+
+dateAxis.start = 0.79;
+dateAxis.keepSelection = true;
+
+
+}); // end am4core.ready()

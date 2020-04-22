@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STATISTIKAT COVID19 - KOSOVE</title>
+    <title>KOVIDNA STATISTIKA19 - REPUBLIC OF KOSOVA</title>
     <!-- my css-->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
    <!--fontawesome-->
@@ -24,6 +24,9 @@
       <!-- Step 2 - Include the fusion theme -->
       <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
 
+      <script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 
         <!--js-->
         <script src="myscript.js"></script>
@@ -47,9 +50,9 @@
       </a>
 
       <div class="lang">
-<span><a  class="active"  href="index.html">SHQ </a></span>
+<span><a  class="active"  href="indexsrb.html">SRB</a></span>
 <span><a  class="other"   href="indexang.html">ANG</a></span>
-<span><a   class="other"   href="indexsrb.html">SRB</a></span>
+<span><a   class="other"   href="index.html">SHQ</a></span>
 </div>
 
 
@@ -63,18 +66,18 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
        
-        <ul class="nav navbar-nav navbar-center">
+        <ul class="nav navbar-nav navbar-center" id="oo">
           <li class="nav-item">
             <a class="nav-link" href="#statistika">Statistika</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Simptomat</a>
+            <a class="nav-link" href="#kkk">Simptomi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Keshilla</a>
+            <a class="nav-link" href="#sss">Saveti</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Statistika Boterore</a>
+            <a class="nav-link" href="statistika.html">Svetska statistika</a>
           </li>
         
         
@@ -113,20 +116,19 @@
 <section class="first" id="nje">
 
 <div class="both">
-  <div class="firstbox"> 
-    <span class="nshpi">#rriNSHPI</span> 
-  <h1>Virusi nuk lëviz</br>ne e lëvizim atë.</h1>
+  <div class="firstbox" id="o"> 
+    <span class="nshpi">#ostanikodkuće</span> 
+  <h1>Virus se ne pomera
+    </br>mi ga premeštamo..</h1>
   <p>COVID19 është një sëmundje infektive e cila përhapet thellësisht dhe vazhdimisht nga personi në person në shumë vende.</p>
   </div>
 
-  <div class="breaker">
-
-  </div>
+  <div class="breaker"></div>
 
   <div class="secondbox">
-  <h1>Cka eshte virusi COVID19?</h1>
-  <p>Sëmundja koronavirus (COVID-19) është një sëmundje infektive e shkaktuar nga një virus i ri. Sëmundja shkakton sëmundje të frymëmarrjes (siç është gripi) me simptoma të tilla si kollë, ethe dhe në raste më të rënda, vështirësi në frymëmarrje.</p>
-  <button class="butoni-simptomat">Shiko Simptomat</button>
+  <h1>Šta je virus COVID19?</h1>
+  <p>Koronavirusna bolest (COVID-19) je zarazna bolest koju izaziva novi virus. Bolest izaziva respiratorne bolesti (kao što je grip) sa simptomima kao što su kašalj, groznica i u težim slučajevima otežano disanje.</p>
+  <a href="#kkk"> <button class="butoni-simptomat">vidi simptome</button></a>
   </div>
 </div>
 </div>
@@ -137,8 +139,8 @@
 <section id="statistika">
 <hr>
 <div class="statistikatitle">
-<h1>Statistika te fundit ne Kosove</h1>
-<p>Se fundmi i perditesuar me <strong>4/21/2020 11:36AM</strong></p>
+<h1>Nedavna statistika u Republici Kosovo</h1>
+<p>Poslednje ažurirano sa <strong> 4/21/2020 11:36AM</strong></p>
 
 
 
@@ -147,19 +149,19 @@
  <div class="boxxes">
 
 
+
    <div class="boxx">
-    <h3>Raste të konfirmuara
-    </h3>
+    <h3>Ovjereni slučajevi</h3>
     <p>598</p>
    </div>
 
    <div class="boxx">
-     <h3>Raste të shëruara</h3>
+     <h3>Izlečeni slučajevi</h3>
      <p>123</p>
    </div>
 
    <div class="boxx">
-     <h3>Vdekje</h3>
+     <h3>Smrt</h3>
      <p>15</p>
    </div>
  </div>
@@ -172,7 +174,7 @@
 
 <section class="second" id="dy">
 
-  <h3 class="fundtitle">Raporti Gjinor</h3>
+  <h3 class="fundtitle">Izveštaj o polu</h3>
   <div id="chartContainer" style="height: 370px; width: 100%;"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </section>
@@ -181,11 +183,94 @@
 
 <section class="third" id="tre">
 
-  <h3 class="parafundtitle">Numri i te infektuarve ne baze te Qyteteve</h3>
-<center>
+  <h3 class="parafundtitle">Broj zaraznih bolesti na osnovu gradova</h3>
   <div id="chart-container"></div>
-</center>
+
+
 </section>
+
+
+<section class="graph">
+  <h1>Totalne smrti</h1>
+  <div id="chartdiv"></div>
+  <p></p>
+
+</section>
+
+
+<hr>
+
+<section class="aurecords" id="kkk">
+  <h1>Simptomi</h1>
+ 
+  <div class="boxxxes">
+
+
+
+    <div class="boxxx">
+     <h3>Suvi kašalj</h3>
+     <img class="simp-images" src="svg/cough.svg">
+    </div>
+ 
+    <div class="boxxx">
+      <h3>Temperatura</h3>
+      <img class="simp-images" src="svg/headache.svg">
+    </div>
+ 
+    <div class="boxxx">
+      <h3 class="veshtersi">Otežano disanje</h3>
+      <img class="simp-images" src="svg/coronavirus.svg">
+    </div>
+  </div>
+
+ 
+</section>
+<hr>
+
+
+
+<section class="keshilla" id="sss">
+
+
+  saveti
+oprati ruke
+zadržite distancu
+nosite masku
+  <h1 class="title-keshilla">Saveti</h1>
+  <div class="boxxxes">
+
+
+    <div class="boxxxx">
+     <h3>Oprati ruke</h3>
+     </h3>
+     <img class="simp-images" src="svg/prevention.svg">
+    </div>
+ 
+    <div class="boxxxx">
+      <h3>Zadržite distancu</h3>
+      <img class="simp-images" src="svg/keep-distance.svg">
+    </div>
+ 
+    <div class="boxxxx">
+      <h3>N osite masku</h3>
+      <img class="simp-images" src="svg/face-mask.svg">
+    </div>
+  </div>
+
+</section>
+
+
+<hr>
+
+
+
+
+
+
+
+<div class="up">
+  <a href="#oo"><img class="up" src="svg/upload.svg" alt=""></a>
+</div>
 
 </main>
 
